@@ -1,0 +1,25 @@
+.nota-card {
+    /* El padding y el borde se incluyen dentro del 100% de alto (si no, la tarjeta se sale de su lugar) */
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 130px;
+    padding: 16px;
+    background-color: #fff3c4;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    overflow-wrap: anywhere;
+}
+
+.nota-titulo {
+    margin: 0 0 6px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #2b2a28;
+}
+
+.nota-contenido {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #4a4843;
+    white-space: pre-wrap;
+}

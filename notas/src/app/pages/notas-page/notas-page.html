@@ -1,0 +1,38 @@
+<main class="pagina">
+
+  <form [formGroup]="notaForm" (ngSubmit)="onSubmit()" class="formulario">
+    <h2>Nueva nota</h2>
+    <p class="ayuda">Escribe un título y lo que no quieres olvidar.</p>
+
+    <div class="campo">
+      <label for="titulo">Título</label>
+      <input id="titulo" type="text" placeholder="Llamar al dentista" formControlName="titulo">
+      @if (notaForm.get('titulo')?.hasError('required') && notaForm.get('titulo')?.touched) {
+        <span class="error-text">El título es obligatorio.</span>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="contenido">Contenido</label>
+      <input id="contenido" type="text" placeholder="Pedir cita para el jueves en la tarde" formControlName="contenido">
+      @if (notaForm.get('contenido')?.hasError('required') && notaForm.get('contenido')?.touched) {
+        <span class="error-text">El contenido es obligatorio.</span>
+      }
+    </div>
+
+    <div class="acciones">
+      <button type="submit" [disabled]="notaForm.invalid">Guardar nota</button>
+    </div>
+  </form>
+
+  <h2 class="subtitulo">Mis notas <span class="contador">{{ notas().length }}</span></h2>
+
+  <div class="notas">
+    @for (nota of notas(); track nota._id) {
+      <app-nota-card [nota]="nota"></app-nota-card>
+    } @empty {
+      <p class="vacio">Todavía no hay notas guardadas.</p>
+    }
+  </div>
+
+</main>

@@ -1,0 +1,123 @@
+.pagina {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 16px 48px;
+}
+
+.formulario {
+  background: #ffffff;
+  border: 1px solid #e2ddd4;
+  border-top: 5px solid #e07a3f;
+  border-radius: 10px;
+  padding: 22px 26px 24px;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.formulario h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.ayuda {
+  margin: 4px 0 20px;
+  font-size: 0.9rem;
+  color: #77736c;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #c8652d;
+  margin-bottom: 2px;
+}
+
+/* Campos con solo una línea abajo, como renglones de libreta */
+input {
+  font: inherit;
+  font-size: 1.05rem;
+  padding: 8px 2px;
+  border: none;
+  border-bottom: 2px solid #e2ddd4;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+input::placeholder {
+  color: #b5afa5;
+}
+
+input:focus {
+  outline: none;
+  border-bottom-color: #e07a3f;
+}
+
+input.ng-invalid.ng-touched {
+  border-bottom-color: #d64545;
+}
+
+.error-text {
+  color: #d64545;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.acciones {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+button {
+  padding: 10px 22px;
+  font: inherit;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #e07a3f;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #c8652d;
+}
+
+button:disabled {
+  color: #c8652d;
+  background-color: #f6e4d8;
+  cursor: not-allowed;
+}
+
+.subtitulo {
+  margin: 40px 0 16px;
+  font-size: 1.25rem;
+}
+
+.contador {
+  font-size: 0.85rem;
+  color: #77736c;
+  background: #e2ddd4;
+  padding: 2px 10px;
+  border-radius: 12px;
+  vertical-align: middle;
+}
+
+.notas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.vacio {
+  color: #77736c;
+}
