@@ -1,0 +1,5 @@
+Auto análisis de IA,
+
+La herramienta que use yo fue Claude.
+
+En este proyecto lo use mucho con postman y con mongo, porque tenia muchos problemas para conectarme a ambos, por alguna razón no me estaban funcionando, y no sabia porque si según yo estaba siguiendo lo que hicimos en clases, y tenia los requisitos para el funcionamiento, porque mi trabajo en clase si funciona, además lo usaba para ver si tronaban las consultas y asi, también le pedi un README y que pusiera lo que se necesita para correr el proyecto, porque no sabia si se podía subir a firebase. yo creo que si le doy un 50%, como coautor mas que auditor.
